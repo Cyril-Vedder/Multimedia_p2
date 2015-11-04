@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<!-- Cyril Vedder          Project 2 CIS 115 part 1 extra credit        1/16/14 -->
+
+	<head>
+		<title>Random Numbers Extra Credit</title>
+		<meta charset="utf-8">
+		<script>
+			var new_text ="";
+  			for( var i= (Math.ceil(Math.random()*200)), randMax = (Math.ceil(Math.random()*200)); i < randMax; i++) {
+			
+  				
+  				if (i==25) {
+  					new_text += "twenty five ";
+  				
+  				}
+  				else if (i==75){
+  					new_text += "seventy five ";
+  				}
+  				else if (i==125){
+  					new_text += "one hundred and twenty five ";
+  				}
+  				else {
+  					new_text += i + " ";
+  				}
+  				
+  			}
+  			document.write(new_text);
+  			
+		</script>
+	</head>
+	<body>
+		
+		
+	</body>
+</html>

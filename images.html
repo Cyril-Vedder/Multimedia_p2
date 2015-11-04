@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<!-- Cyril Vedder          Project 2 CIS 115 part 2        1/16/14 -->
+
+	<head>
+		<title>Images</title>
+		<meta charset="utf-8">
+		<script>
+  			function init() {
+				var button = document.getElementById("addButton");
+					button.onclick = handleButtonClick;
+			}
+			window.onload = init;
+
+			function handleButtonClick() {
+				var imageLinkInput = document.getElementById("imageInput");
+				var imageLink = imageLinkInput.value;
+				
+				if (imageLink == "") {
+					alert("Please enter an image");
+				}
+				else {
+					var ul = document.getElementById("images");
+					var li = document.createElement("li");
+					
+					var img = document.createElement("img");
+					img.src = imageLink;
+					img.style.width="350px";
+					
+					li.appendChild(img);
+					ul.appendChild(li);
+					
+					imageInput.value = "";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="imageInput" size="40" placeholder="Enter Image">
+    	<input type="button" id="addButton" value="Add Image">
+   		<ul id="images"></ul>
+		
+	</body>
+</html>
